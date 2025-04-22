@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="streaming.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="#" class="menu-item active">Home</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Contact</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="store.png" alt="Mapfre" width="100%" height="100%">
+        <p>Copy the output from `gcloud auth print-access-token` and enter below, then click `Connect`. Once you see `Connected!` you can start chat with the agent!</p>
+        <input id="token">
+        <button id="start" onclick="con()">Connect</button>
+        <button id="shareScreen" onclick="shareScreen()">Share Screen</button>
+        <button id="stopShareScreen" onclick="stopShareScreen()" disabled>Stop Sharing</button>
+    
+        <br>
+        <video id="localVideo" autoplay playsinline muted style="width:20%;"></video>
+        <video id="screenShareVideo" autoplay playsinline style="width:70%;"></video>
+    
+        <div id="connectStatus"></div>
+        <div id="peerResponse"></div>
+
+    </div>
+    <div class="footer">
+        footer
+
+    </div>
+
+
+
+   
+
+</body>
+
+</html>

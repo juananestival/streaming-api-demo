@@ -1,0 +1,91 @@
+/* style.css */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#token {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: default;
+}
+
+video {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#peerResponse {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#peerResponse p {
+    margin: 10px;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ddd; /* Optional: Background color for the menu */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    background-color: #bbb; /* Optional: Hover effect */
+    color: #fff;
+}
+
+.menu-item.active {
+    background-color: #4CAF50;
+    color: white;
+}
